@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./sass/main.css">
+
+  <title>Sandbox</title>
+</head>
+
+<body>
+  <!-- topbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark top-bar" id="home">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-map-marker-alt"></i> Moonshine St. 14/05 Light City</a>
+      <div class="text-right" id="navbarText">
+        <span class="navbar-text">
+          <i class="fas fa-phone-alt"></i> 00 (123) 456 78 90
+        </span>
+        <span class="navbar-text">
+          <i class="far fa-envelope"></i> sandbox@email.com
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-light navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Resources/logo.png" alt="" width="134" height="26" class="d-inline-block align-text-top">
+      </a>
+
+      <div class="nav-links" id="navbar-links">
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+            <button class="btn dropdown-toggle" type="button">
+              <div class="dropdown">
+                <span class="demo" onclick="showDiv()">Demos</span>
+                <div class="dropdown-content">
+                  <img src="./Resources/Demos/mi1.jpg" alt="">
+                  <img src="./Resources/Demos/mi2.jpg" alt="">
+                  <img src="./Resources/Demos/mi3.jpg" alt="">
+                  <img src="./Resources/Demos/mi4.jpg" alt="">
+                  <img src="./Resources/Demos/mi5.jpg" alt="">
+                  <img src="./Resources/Demos/mi6.jpg" alt="">
+                  <img src="./Resources/Demos/mi7.jpg" alt="">
+                  <img src="./Resources/Demos/mi8.jpg" alt="">
+                  <img src="./Resources/Demos/mi9.jpg" alt="">
+                  <img src="./Resources/Demos/mi10.jpg" alt="">
+                  <img src="./Resources/Demos/mi11.jpg" alt="">
+                  <img src="./Resources/Demos/mi12.jpg" alt="">
+                  <img src="./Resources/Demos/mi13.jpg" alt="">
+                  <img src="./Resources/Demos/mi14.jpg" alt="">
+                  <img src="./Resources/Demos/mi15.jpg" alt="">
+                  <img src="./Resources/Demos/mi16.jpg" alt="">
+                  <img src="./Resources/Demos/mi17.jpg" alt="">
+                  <img src="./Resources/Demos/mi18.jpg" alt="">
+                </div>
+              </div>
+            </button>
+          </div>
+        </a>
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="dropdown">
+                <span>Pages</span>
+                <div class="dropdown-content">
+
+                </div>
+            </button>
+          </div>
+        </a>
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Projects
+            </button>
+          </div>
+        </a>
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blogs
+            </button>
+          </div>
+        </a>
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="dropdown-block">
+                <span onclick="showBlocks()"> Blocks </span>
+                <div class="dropdown-blocks">
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block1.svg" alt="">
+                    <p>About</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block2.svg" alt="">
+                    <p>Blog</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block3.svg" alt="">
+                    <p>Call to Action</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block4.svg" alt="">
+                    <p>Clients</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block5.svg" alt="">
+                    <p>Contact</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block6.svg" alt="">
+                    <p>Facts</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block7.svg" alt="">
+                    <p>FAQ</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block8.svg" alt="">
+                    <p>Features</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block9.svg" alt="">
+                    <p>Footer</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block10.svg" alt="">
+                    <p>Hero</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block11.svg" alt="">
+                    <p>Navbar</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block12.svg" alt="">
+                    <p>Portfolio</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block13.svg" alt="">
+                    <p>Pricing</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block14.svg" alt="">
+                    <p>Process</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block15.svg" alt="">
+                    <p>Team</p>
+                  </div>
+                  <div class="block-content">
+                    <img src="./Resources/Blocks/block16.svg" alt="">
+                    <p>Testimonials</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </a>
+        <a class="text-center" aria-current="page" href="#">
+          <div class="btn-group">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documentation
+            </button>
+          </div>
+        </a>
+      </div>
+      <a class="text-center btn-container" aria-current="page" href="#">
+        <div class="btn-group">
+          <button class="btn  dropdown-toggle" type="button">
+            <div class="dropdown-lang">
+              <span onclick="showLanguages()">EN</span>
+              <div class="dropdown-languages">
+                <ul>
+                  <li>EN</li>
+                  <li>DE</li>
+                  <li>ES</li>
+                </ul>
+              </div>
+            </div>
+          </button>
+          <button class="btn btn-primary contact-btn" type="submit" id="contact-btn">Contact</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <!--image with text-->
+  <section class="hero__container">
+    <div class="hero__description">
+      <p class="hero__text">We bring solutions to make life easier for our customers.</p>
+      <p class="sub__text">We have considered our solutions to support every stage of our growth.</p>
+      <button class="btn1" type="submit">Explore Now</button>
+      <button class="btn2" type="submit">Free Trial</button>
+    </div>
+    <div class="hero_image_container">
+      <img src="./Resources/img1.jpg" alt="hero image" class="hero__image">
+    </div>
+  </section>
+
+  <!--images-->
+  <section class="container row">
+    <img src="./Resources/c1.png" class="rounded img-fluid" alt="...">
+    <img src="./Resources/c2.png" class="rounded img-fluid" alt="...">
+    <img src="./Resources/c3.png" class="rounded img-fluid" alt="...">
+    <img src="./Resources/c4.png" class="rounded img-fluid" alt="...">
+    <img src="./Resources/c5.png" class="rounded img-fluid" alt="...">
+    <img src="./Resources/c6.png" class="rounded img-fluid" alt="...">
+  </section>
+
+  <!--icons and para-->
+  <div class="text-center feature-container">
+    <h3>WHAT WE DO?</h3>
+    <h1>The service we offer is specifically designed to meet your needs.</h1>
+    <!--icon-->
+    <div class="features">
+      <div class="feature-cards">
+        <i class="fas fa-phone-alt icons"></i>
+        <h5>24/7 Support</h5>
+        <p>Etiam porta sem malesuada magna mollis euismod.Donec ullamcorper nulla non metus auctor fringilla</p>
+        <button type="button" class="btn">Learn More <i class="fas fa-angle-right"></i></button>
+      </div>
+      <div class="feature-cards">
+        <i class="fas fa-shield-alt icons"></i>
+        <h5>Secure Payments</h5>
+        <p>Etiam porta sem malesuada magna mollis euismod.Donec ullamcorper nulla non metus auctor fringilla</p>
+        <button type="button" class="btn">Learn More <i class="fas fa-angle-right"></i></button>
+      </div>
+      <div class="feature-cards">
+        <i class="far fa-edit icons"></i>
+        <h5>Daily Updates</h5>
+        <p>Etiam porta sem malesuada magna mollis euismod.Donec ullamcorper nulla non metus auctor fringilla</p>
+        <button type="button" class="btn">Learn More <i class="fas fa-angle-right"></i></button>
+      </div>
+      <div class="feature-cards">
+        <i class="fas fa-chart-area icons"></i>
+        <h5>Market Reasearch</h5>
+        <p>Etiam porta sem malesuada magna mollis euismod.Donec ullamcorper nulla non metus auctor fringilla</p>
+        <button type="button" class="btn">Learn More <i class="fas fa-angle-right"></i></button>
+      </div>
+    </div>
+
+    <!--how it works-->
+    <section class="work-section">
+      <div class="works-img">
+        <img src="./Resources/img2.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="how-it-works">
+        <div class="heading">
+          <h2>How It Works?</h2>
+          <p>So here are three working steps why our valued customers choose us.</p>
+        </div>
+        <div class="points">
+          <div class="num">
+            <p>1</p>
+          </div>
+          <div class="content">
+            <h2>Collect Ideas</h2>
+            <p>Nulla vitae elit libero pharetra augue dapibus. Praesent commodo cursus.</p>
+          </div>
+        </div>
+        <div class="points">
+          <div class="num">
+            <p>2</p>
+          </div>
+          <div class="content">
+            <h2>Data Analysis</h2>
+            <p>Vivamus sagittis lacus vel augue lacreet. Etiam porta sem malesuada magna.</p>
+          </div>
+        </div>
+        <div class="points">
+          <div class="num">
+            <p>3</p>
+          </div>
+          <div class="content">
+            <h2>Finalize Product</h2>
+            <p>Cras mattis consectetur purus sit amet. Senean lacinia bibendum nulla sed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--carsoroule-->
+  <div class="products-section">
+    <p class="product-heading">LATEST PROJECTS</p>
+    <p class="product-text">Check out some of our awesome projects with creative ideas and great design.</p>
+
+    <div class="cards">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./Resources/img3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img8.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./Resources/img9.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Team desc-->
+  <section class="team-section">
+    <div class="meet">
+      <p class="meet-heading">MEET THE TEAM</p>
+      <p class="meet-text">Save your time and money by choosing our professional team.</p>
+      <p class="team-text">Donec id elit non mi porta gravida at eget metus .Morbi leo risus, porta ac consectetur
+        ac,vestibulum at eros
+        tempus porttitor</p>
+      <button type="button" class="btn">See All Members</button>
+    </div>
+    <div class="team-members">
+      <div class="cards">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./Resources/img10.jpg" alt="">
+            <p class="member-name">Cory Zamora</p>
+            <p class="member-role">MARKETING SPECIALIST</p>
+            <p class="member-info">Etiam porta sem magna malesuada mollis.</p>
+            <div class="member-social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Resources/img11.jpg" alt="">
+            <p class="member-name">Coriss Ambady</p>
+            <p class="member-role">FINANCIAL ANALYST</p>
+            <p class="member-info">Etiam porta sem magna malesuada mollis.</p>
+            <div class="member-social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Resources/img12.jpg" alt="">
+            <p class="member-name">Nikolas Brooten</p>
+            <p class="member-role">SALES MANAGER</p>
+            <p class="member-info">Etiam porta sem magna malesuada mollis.</p>
+            <div class="member-social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Resources/img14.jpg" alt="">
+            <p class="member-name">Jackie Sanders</p>
+            <p class="member-role">INVESTMENT PLANNER</p>
+            <p class="member-info">Etiam porta sem magna malesuada mollis.</p>
+            <div class="member-social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Resources/img15.jpg" alt="">
+            <p class="member-name">Tina Geller</p>
+            <p class="member-role">ASSISTANT BUYER</p>
+            <p class="member-info">Etiam porta sem magna malesuada mollis.</p>
+            <div class="member-social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--REVIEW-->
+  <section class="review-section">
+    <div class="review-img">
+      <img src="./Resources/img13.png" alt="">
+    </div>
+    <!--STARS-->
+    <div class="review-text">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="review">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."
+      </p>
+      <p class="name">Coriss Ambady</p>
+      <p class="profession">FINANCIAL ANALYST</p>
+    </div>
+  </section>
+  <!--footer-->
+  <footer>
+    <div class="footer-top">
+      <div class="foot-container">
+        <div class="row">
+          <div class="col-md-3 footer-about">
+            <img src="./Resources/logo.png" alt="">
+            <p> <span> ©2021 Sandbox. </span>All rights reserved.</p>
+            <div class="row icon-container">
+              <div class="col footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 footer-contact">
+            <h3>Get in Touch</h3>
+            <p> Moonshine St. 14/05 Light City, London, United Kingdom</p><br>
+            <p> info@email.com</p>
+            <p> +00 (123) 456 78 90</p>
+
+          </div>
+          <div class="col-md-3 footer-links">
+            <div class="row">
+              <div class="col">
+                <h3>Learn More</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="links">About Us</p>
+                <p class="links">Our Story</p>
+                <p class="links">Projects</p>
+                <p class="links">Terms of Use</p>
+                <p class="links">Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 footer-newsletter">
+            <h3>Our Newsletter</h3>
+            <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <button class="btn" type="button" id="button-addon2">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#home" class="top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+
+
+  <!-- jsvascript -->
+  <script src="./js/main.js"></script>
+  <!-- Jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- Owl carousel -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: false,
+      margin: 20,
+      nav: true,
+      dots: false,
+      animateOut: 'fadeOut',
+      responsive: {
+        0: {
+          items: 1,
+          dots: true
+        },
+        700: {
+          items: 2,
+          dots: true
+        },
+        1000: {
+          items: 3,
+          dots: true
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
