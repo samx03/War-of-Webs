@@ -66,13 +66,21 @@
               <div class="dropdown">
                 <span class="demo" onclick="showDiv()">Demos</span>
                 <div class="dropdown-content">
+                  <p>Demo 1</p>
                   <img src="./Resources/Demos/mi1.jpg" alt="">
+                  <p>Demo 2</p>
                   <img src="./Resources/Demos/mi2.jpg" alt="">
+                  <p>Demo 3</p>
                   <img src="./Resources/Demos/mi3.jpg" alt="">
+                  <p>Demo 4</p>
                   <img src="./Resources/Demos/mi4.jpg" alt="">
+                  <p>Demo 5</p>
                   <img src="./Resources/Demos/mi5.jpg" alt="">
+                  <p>Demo 6</p>
                   <img src="./Resources/Demos/mi6.jpg" alt="">
+                  <p>Demo 7</p>
                   <img src="./Resources/Demos/mi7.jpg" alt="">
+                  <p>Demo 8</p>
                   <img src="./Resources/Demos/mi8.jpg" alt="">
                   <img src="./Resources/Demos/mi9.jpg" alt="">
                   <img src="./Resources/Demos/mi10.jpg" alt="">
@@ -91,29 +99,55 @@
         </a>
         <a class="text-center" aria-current="page" href="#">
           <div class="btn-group">
-            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <div class="dropdown">
-                <span>Pages</span>
-                <div class="dropdown-content">
-
+            <button class="btn  dropdown-toggle" type="button">
+              <div class="dropdown-page">
+                <span onclick="showPages()">Pages</span>
+                <div class="dropdown-pages">
+                  <ul>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Pricing</li>
+                    <li>One Page</li>
+                  </ul>
                 </div>
+              </div>
             </button>
           </div>
         </a>
         <a class="text-center" aria-current="page" href="#">
           <div class="btn-group">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Projects
+            <button class="btn  dropdown-toggle" type="button">
+              <div class="dropdown-project">
+                <span onclick="showProjects()">Projects</span>
+                <div class="dropdown-projects">
+                  <ul>
+                    <li>Project I</li>
+                    <li>Project II</li>
+                    <li>Project III</li>
+                    <li>Project IV</li>
+                    <li>Project V</li>
+                    <li>Single Projects</li>
+                  </ul>
+                </div>
+              </div>
             </button>
           </div>
         </a>
         <a class="text-center" aria-current="page" href="#">
           <div class="btn-group">
-            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Blogs
+            <button class="btn  dropdown-toggle" type="button">
+              <div class="dropdown-blog">
+                <span onclick="showBlogs()">Blog</span>
+                <div class="dropdown-blogs">
+                  <ul>
+                    <li>Blog without Sidebar</li>
+                    <li>Blog with Sidebar</li>
+                    <li>Blog with left Sidebar</li>
+                    <li>Blog Posts</li>
+                  </ul>
+                </div>
+              </div>
             </button>
           </div>
         </a>
@@ -196,9 +230,82 @@
         </a>
         <a class="text-center" aria-current="page" href="#">
           <div class="btn-group">
-            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Documentation
+            <button class="btn  dropdown-toggle" type="button">
+              <div class="dropdown-documentation">
+                <span onclick="showDocumentations()">Documentation</span>
+                <div class="dropdown-documentations">
+                  <div class="contents">
+                    <h5>Usage</h5>
+                    <ul style="margin-bottom: 58px;">
+                      <li>Get Started</li>
+                      <li>Forms</li>
+                      <li>FAQ</li>
+                    </ul>
+                    <h5 style="height: 10px;">Style Guide</h5>
+                    <ul>
+                      <li>Colors</li>
+                      <li>Fonts</li>
+                      <li>Duotone Icons</li>
+                      <li>Unicons</li>
+                    </ul>
+                  </div>
+                  <div class="contents">
+                    <h5></h5>
+                    <ul>
+                      <li>Change log</li>
+                      <li>Credits</li>
+                    </ul>
+                    <h5></h5>
+                    <ul>
+                      <li>Illustrations</li>
+                      <li>Media</li>
+                      <li>Abstract Images</li>
+                      <li>Misc</li>
+                    </ul>
+                  </div>
+                  <div class="contents">
+                    <h5>Elements</h5>
+                    <ul>
+                      <li>Accordion</li>
+                      <li>Alerts</li>
+                      <li>Animations</li>
+                      <li>Avatars</li>
+                      <li>Background</li>
+                      <li>Badges</li>
+                      <li>Breadcrumb</li>
+                      <li>Buttons</li>
+                      <li>Carousel</li>
+                    </ul>
+                  </div>
+                  <div class="contents">
+                    <h5></h5>
+                    <ul>
+                      <li>Dividers</li>
+                      <li>Form Elements</li>
+                      <li>Hover</li>
+                      <li>Image Mask</li>
+                      <li>Lightbox</li>
+                      <li>Lists</li>
+                      <li>Media Player</li>
+                      <li>Modal</li>
+                      <li>Progressbar</li>
+                    </ul>
+                  </div>
+                  <div class="contents">
+                    <h5></h5>
+                    <ul>
+                      <li>Shadows</li>
+                      <li>Shapes</li>
+                      <li>Tables</li>
+                      <li>Tabs</li>
+                      <li>Text Highlight</li>
+                      <li>Tooltips & Popovers</li>
+                      <li>Typed Text</li>
+                      <li>Typography</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </button>
           </div>
         </a>
@@ -207,7 +314,7 @@
         <div class="btn-group">
           <button class="btn  dropdown-toggle" type="button">
             <div class="dropdown-lang">
-              <span onclick="showLanguages()">EN</span>
+              <span onclick="showLanguages()" style="color: #000;">EN</span>
               <div class="dropdown-languages">
                 <ul>
                   <li>EN</li>
@@ -354,6 +461,50 @@
     </div>
   </div>
 
+  <!-- who container -->
+
+  <section class="who__container">
+    <div class="who_image_container">
+      <img src="./Resources/about12.jpg" alt="hero image" class="who__image">
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="who-are-we">
+      <div class="who-heading">
+        <h2>WHO ARE WE?</h2>
+        <p class="who-text">Company the believes in the power of creative strategy.</p>
+        <p class="who-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quasi provident expedita
+          dolorum accusantium
+          hic enim modi? Officiis odit expedita esse veritatis, laudantium debitis. Ab error dolorum adipisci delectus
+          odio.</p>
+      </div>
+      <div class="points-container">
+        <div class="who-points">
+          <div class="who-content">
+            <i class="fas fa-check"></i>
+            <p class="points-text">Aenean eu leo quam ornare curabitur blandit tempus.</p>
+          </div>
+        </div>
+        <div class="who-points">
+          <div class="who-content">
+            <i class="fas fa-check"></i>
+            <p class="points-text">Etiam porta sem malesuada magna mollis euismod.</p>
+          </div>
+        </div>
+        <div class="who-points">
+          <div class="who-content">
+            <i class="fas fa-check"></i>
+            <p class="points-text">Nullam quis risus eget urna mollis ornare donec elit.</p>
+          </div>
+        </div>
+        <div class="who-points">
+          <div class="who-content">
+            <i class="fas fa-check"></i>
+            <p class="points-text">Fermentum massa vivamus faucibus amet euismod.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--Team desc-->
   <section class="team-section">

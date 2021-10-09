@@ -34,6 +34,10 @@ window.addEventListener("scroll", function(){
 const dropdown = document.querySelector(".dropdown-content");
 const dropdownBlocks = document.querySelector(".dropdown-blocks");
 const dropdownLanguages = document.querySelector(".dropdown-languages");
+const dropdownPages = document.querySelector(".dropdown-pages");
+const dropdownProjects = document.querySelector(".dropdown-projects");
+const dropdownBlogs = document.querySelector(".dropdown-blogs");
+const dropdownDocumentations = document.querySelector(".dropdown-documentations");
 function showDiv(){
     dropdown.classList.toggle("show-content");
 }
@@ -43,7 +47,18 @@ function showBlocks(){
 function showLanguages(){
     dropdownLanguages.classList.toggle("show-content");
 }
-
+function showPages(){
+    dropdownPages.classList.toggle("show-content");
+}
+function showProjects(){
+    dropdownProjects.classList.toggle("show-content");
+}
+function showBlogs(){
+    dropdownBlogs.classList.toggle("show-content");
+}
+function showDocumentations(){
+    dropdownDocumentations.classList.toggle("show-content");
+}
 
 // btn 
 const btn1 = document.querySelector(".btn1");
